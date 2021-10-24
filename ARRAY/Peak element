@@ -1,0 +1,19 @@
+//https://practice.geeksforgeeks.org/problems/peak-element/1#
+
+
+
+int peakElement(int arr[], int n)
+{
+   // Your code here
+   int max=arr[0];
+   int i;
+   int index =0;
+   for (i=0;i<n;i++){
+       if (max<arr[i]){
+           max=arr[i];
+           index=i;
+       }
+   }
+   return index;
+
+}
