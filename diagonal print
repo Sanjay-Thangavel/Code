@@ -1,0 +1,37 @@
+#include <stdio.h>
+#define C 4
+#define R 3
+
+int main()
+{
+    int i,j,k;
+    int arr[3][4]={
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,1,2,6}
+    };
+   // printf("Hello World");
+   for(k=0;k<R;k++){
+       i=k;
+       j=0;
+       while(i>=0){
+           printf("%d ",arr[i][j]);
+           i=i-1;
+           j++;
+       }
+       
+       printf("\n");
+       
+   }
+   
+   for(k=1;k<C;k++){
+       i=R-1;
+       j=k;
+       while(j<=C-1){
+           printf("%d ",arr[i][j]);
+           i--;j++;
+       }
+       printf("\n");
+   }
+    
+}
