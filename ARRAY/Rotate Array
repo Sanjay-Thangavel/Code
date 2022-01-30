@@ -1,0 +1,32 @@
+//left wards
+
+#include <iostream>
+using namespace std;
+void prin(int b[],int N){
+    for(int i=0;i<N;i++){
+        cout<<b[i]<<" ";
+    }
+    cout<<"\n";
+}
+
+
+int main() {
+    int T,N,c;
+    cin>>T;
+    for(int i=0;i<T;i++)
+    {
+        cin>>N>>c;
+        int a[N],b[N];
+        for(int i=0;i<N;i++){
+            cin>>a[i];
+        }
+        for(int i=0;i<N;i++){
+            b[i]=a[(c+i)%N];   // a[(c+i+1)%N] for right rotation 
+        }
+       prin(b,N); 
+        
+    }
+	//code
+	//
+	
+}
