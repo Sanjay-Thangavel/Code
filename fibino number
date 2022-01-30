@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+int fib(int N)
+{
+    
+    int n3;
+    int n1=0;
+    int n2=1;
+    if (N<=1) {
+       // cout<<"hai ";
+        return n1;}
+        
+    
+   // cout<<n1<<" "<<n2;
+    for(int i=1;i<N-1;i++){
+        n3=n1+n2;
+        
+       // cout<<" "<<n3;
+        n1=n2;
+        n2=n3;
+    }
+    return n3;
+
+    
+}
+    
+int main()
+{
+    int N;
+    cin>>N;
+    int c=fib(N);
+    cout<<c;
+    
+   // cout<<"Hello World";
+
+    return 0;
+}
